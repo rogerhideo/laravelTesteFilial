@@ -33,8 +33,8 @@ E então rode o servidos com
 
 ## Sobre as api's implementadas
 
-Registrar usuário
-{{ host }}/api/auth/register
+- Registrar usuário<br>
+{{ host }}/api/auth/register<br>
 METHOD POST
 ```json
 {
@@ -44,8 +44,8 @@ METHOD POST
 }
 ```
 
-Login de usuário
-{{ host }}/api/auth/login
+- Login de usuário<br>
+{{ host }}/api/auth/login<br>
 METHOD POST
 ```json
 {
@@ -55,22 +55,28 @@ METHOD POST
 
 ```
 
-Retorna filiais cadastradas pelo usuário<br>
+<br>
+- Retorna filiais cadastradas pelo usuário<br>
 {{ host }}/api/filiais/{userId}<br>
 METHOD GET
 
 
-Retorna 1 filial<br>
+
+- Retorna 1 filial<br>
 {{ host }}/api/filial/{filialId}<br>
 METHOD GET<br>
-HEADERS: Authorization: Bearer {{ accessToken }}
+HEADERS: Authorization: Bearer {{ accessToken }}<br>
 
-Deleta Filial por Id<br>
+
+
+- Deleta Filial por Id<br>
 {{ host }}/api/filial/{filialID}<br>
 METHOD DELETE<br>
-HEADERS: Authorization: Bearer {{ accessToken }}
+HEADERS: Authorization: Bearer {{ accessToken }}<br>
 
-Atualiza Dados da filial<br>
+
+
+- Atualiza Dados da filial<br>
 {{ host }}/api/filial/{filialId}<br>
 METHOD PUT<br>
 HEADERS: Authorization: Bearer {{ accessToken }}
@@ -84,8 +90,8 @@ HEADERS: Authorization: Bearer {{ accessToken }}
 
 ```
 
-Cria nova filial<br>
-{{ host }}/api/filial
+- Cria nova filial<br>
+{{ host }}/api/filial<br>
 METHOD POST<br>
 HEADERS: Authorization: Bearer {{ accessToken }}
 ```json
