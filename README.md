@@ -46,12 +46,13 @@ METHOD POST
 
 ```
 
-Retorna filiais cadastradas pelo usuário
-{{ host }}/api/filiais/{userId}
+Retorna filiais cadastradas pelo usuário<br>
+{{ host }}/api/filiais/{userId}<br>
 METHOD GET
 
-Retorna 1 filial
-{{ host }}/api/filial/{filialId}
+
+Retorna 1 filial<br>
+{{ host }}/api/filial/{filialId}<br>
 METHOD GET
 
 
