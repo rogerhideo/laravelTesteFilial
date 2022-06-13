@@ -75,7 +75,7 @@ HEADERS: Authorization: Bearer {{ accessToken }}
 
 ```
 
-CCria nova filial<br>
+Cria nova filial<br>
 {{ host }}/api/filial
 METHOD POST<br>
 HEADERS: Authorization: Bearer {{ accessToken }}
