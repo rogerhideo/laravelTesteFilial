@@ -28,6 +28,7 @@ Registrar usuário
 {{ host }}/api/auth/register
 METHOD POST
 ```json
+{
 	"name": "Usurionovo",
 	"email" : "new_user@gmail.com",
 	"password": "1234"
@@ -38,11 +39,11 @@ Login de usuário
 {{ host }}/api/auth/login
 METHOD POST
 ```json
-	{
+{
 	"email" : "new_user@gmail.com",
 	"password": "1234556"
 }
-}
+
 ```
 
 Retorna filiais cadastradas pelo usuário
