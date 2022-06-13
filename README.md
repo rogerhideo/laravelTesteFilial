@@ -55,7 +55,6 @@ METHOD POST
 
 ```
 
-<br>
 - Retorna filiais cadastradas pelo usuário<br>
 {{ host }}/api/filiais/{userId}<br>
 METHOD GET
@@ -84,8 +83,8 @@ HEADERS: Authorization: Bearer {{ accessToken }}
 {
     "nome": "filial1111",
     "cidade": "Rondonopolis1111 ",
-	"latitude" : "-3333222",
-	"longitude": "-222233333"
+    "latitude" : "-3333222",
+    "longitude": "-222233333"
 }
 
 ```
@@ -98,9 +97,9 @@ HEADERS: Authorization: Bearer {{ accessToken }}
 {
     "nome": "filial 12roo",
     "cidade": "teste 12",
-	"latitude" : "-33332",
-	"longitude": "-233333",
-	"user_id" : "2"
+    "latitude" : "-33332",
+    "longitude": "-233333",
+    "user_id" : "2"
 }
 
 ```
