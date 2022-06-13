@@ -26,8 +26,6 @@ Route::prefix('auth')->group( function() {
     Route::post('register', [RegisterController::class, 'register']);
 });
 
-
-
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
@@ -39,10 +37,10 @@ Route::get('filiais/{userId}', [FilialController::class, 'index']);
 Route::get('filial/{id}', [FilialController::class, 'show']);
 
 // Create new filial
-Route::post('filial', [FilialController::class, 'store']);
+Route::post('filial', [FilialController::class, 'store'])->middleware('auth:sanctum');
 
 // Update filial
-Route::put('filial/{id}', [FilialController::class, 'update']);
+Route::put('filial/{id}', [FilialController::class, 'update'])->middleware('auth:sanctum');
 
 // Delete filial
-Route::delete('filial/{id}', [FilialController::class,'destroy']);
+Route::delete('filial/{id}', [FilialController::class,'destroy'])->middleware('auth:sanctum');
