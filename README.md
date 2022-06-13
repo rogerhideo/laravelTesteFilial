@@ -53,6 +53,42 @@ METHOD GET
 
 Retorna 1 filial<br>
 {{ host }}/api/filial/{filialId}<br>
-METHOD GET
+METHOD GET<br>
+HEADERS: Authorization: Bearer {{ accessToken }}
+
+Deleta Filial por Id<br>
+{{ host }}/api/filial/{filialID}<br>
+METHOD DELETE<br>
+HEADERS: Authorization: Bearer {{ accessToken }}
+
+Atualiza Dados da filial<br>
+{{ host }}/api/filial/{filialId}<br>
+METHOD PUT<br>
+HEADERS: Authorization: Bearer {{ accessToken }}
+```json
+{
+    "nome": "filial1111",
+    "cidade": "Rondonopolis1111 ",
+	"latitude" : "-3333222",
+	"longitude": "-222233333"
+}
+
+```
+
+CCria nova filial<br>
+{{ host }}/api/filial
+METHOD POST<br>
+HEADERS: Authorization: Bearer {{ accessToken }}
+```json
+{
+    "nome": "filial 12roo",
+    "cidade": "teste 12",
+	"latitude" : "-33332",
+	"longitude": "-233333",
+	"user_id" : "2"
+}
+
+```
+
 
 
