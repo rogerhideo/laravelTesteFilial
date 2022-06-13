@@ -24,4 +24,33 @@ E então rode o servidos com
      php artisan serve --host=192.168.100.76:3000
     
 
+Registrar usuário
+{{ host }}/api/auth/register
+METHOD POST
+```json
+	"name": "Usurionovo",
+	"email" : "new_user@gmail.com",
+	"password": "1234"
+}
+```
+
+Login de usuário
+{{ host }}/api/auth/login
+METHOD POST
+```json
+	{
+	"email" : "new_user@gmail.com",
+	"password": "1234556"
+}
+}
+```
+
+Retorna filiais cadastradas pelo usuário
+{{ host }}/api/filiais/{userId}
+METHOD GET
+
+Retorna 1 filial
+{{ host }}/api/filial/{filialId}
+METHOD GET
+
 
