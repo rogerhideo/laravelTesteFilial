@@ -14,6 +14,7 @@ class Filial extends JsonResource
     public function toArray($request)
     {
         return [
+            'id' => $this->id,
             'nome' => $this->nome,
             'cidade' => $this->cidade,
             'latitude' => $this->latitude,
