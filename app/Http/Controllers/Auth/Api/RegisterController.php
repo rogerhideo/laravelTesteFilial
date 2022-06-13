@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 
 class RegisterController extends Controller {
     public function register( Request $request, User $user ) {
-
-        //TODO: validar request
         $userData = $request->only('name', 'email','password');
         $userData['password'] = bcrypt($userData['password']);
 
