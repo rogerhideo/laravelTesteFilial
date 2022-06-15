@@ -50,7 +50,7 @@ METHOD POST
 ```json
 {
 	"email" : "new_user@gmail.com",
-	"password": "1234556"
+	"password": "1234"
 }
 
 ```
